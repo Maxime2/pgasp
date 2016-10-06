@@ -15,7 +15,7 @@
 #
 
 return_google_charts
-<!
+<?
    i record;
    cu integer := 20; /* current user Jean Cook CEO */
 
@@ -26,7 +26,7 @@ return_google_charts
    can_see_bar boolean := has_security_right (302, cu) > 0;
    can_see_pie boolean := has_security_right (303, cu) > 0;
 
-!><%
+?><%
 
    if has_security_right (100, cu) = 0 then
 

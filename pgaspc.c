@@ -90,7 +90,7 @@ int main(int argc, char * argv[])
       else
       {
          /* variables declaration tag <! !> */
-         if (line_trimmed[0] == '<' && line_trimmed[1] == '!')
+	 if (line_trimmed[0] == '<' && line_trimmed[1] == '?')
          {
             in_header = false; /* as soon as we reach the declare section, the header section stops */
             in_params = false;
@@ -98,7 +98,7 @@ int main(int argc, char * argv[])
             line_trimmed += 2;
          }
 
-         if (line_trimmed[0] == '!' && line_trimmed[1] == '>')
+         if (line_trimmed[0] == '?' && line_trimmed[1] == '>')
          {
             in_declare = false;
             printf("begin\n_pgasp_ := \'");

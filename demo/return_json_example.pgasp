@@ -11,11 +11,11 @@
 #
 
 return_json_example
-<!
+<?
 
    r record;
 
-!>[
+?>[
 <%
 
    for r in (select p.*, row_number() over(order by first_name, last_name, id) as rownum from people p order by first_name, last_name, id)

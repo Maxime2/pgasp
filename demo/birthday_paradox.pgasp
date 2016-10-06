@@ -1,11 +1,11 @@
 birthday_paradox
 param_people integer 30
 
-<!
+<?
 
    current_probability numeric(10,8) := 1.0;
 
-!>
+?>
 <html>
 <head>
 <title>Birthday Paradox Example</title>

@@ -20,11 +20,11 @@
 
 browse_people
 p_id integer 0
-<!
+<?
 
    r record;
 
-!><html>
+?><html>
 <head>
 <title>PGASP Browse People</title>
 <style>

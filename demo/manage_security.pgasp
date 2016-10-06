@@ -22,12 +22,12 @@ p_group integer 1
 p_right integer 0
 p_member integer 0
 submit_action varchar ~
-<!
+<?
 
    i record;
    cu integer := 20; /* current user Jean Cook CEO */
 
-!><%
+?><%
 
    if has_security_right (100, cu) = 0 then
 
